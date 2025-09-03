@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women | Peaky Clothing Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        /* Product Gallery Section */
+        .product-gallery {
+            padding: 50px 15px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-gallery h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            justify-items: center;
+            padding: 0 10px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .product h3 {
+            font-size: 1.8em;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            color: #ff6347;
+            margin: 10px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fafafa;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .buttons button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: #e5533d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .product-gallery h2 {
+                font-size: 2em;
+            }
+
+            .product h3 {
+                font-size: 1.6em;
+            }
+
+            .product p {
+                font-size: 1em;
+            }
+
+            .buttons button {
+                font-size: 1.1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Peaky Store</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Women's Collection</h2>
+        <p>Bold, chic, and empowering styles for modern women.</p>
+    </section>
+
+    <section class="product-gallery">
+        <h2>Top Picks for Women</h2>
+        <div class="products">
+            <div class="product">
+                <img src="images/women-jacket.jpg" alt="Chic Winter Jacket">
+                <h3>Chic Winter Jacket</h3>
+                <p>Ksh 3000</p>
+                <div class="buttons">
+                    <button>Add to Cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/feminine-dress.jpg" alt="Feminine Summer Dress">
+                <h3>Feminine Summer Dress</h3>
+                <p>Ksh 2200</p>
+                <div class="buttons">
+                    <button>Add to Cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="images/women-boots.jpg" alt="Ankle Boots">
+                <h3>Ankle Boots</h3>
+                <p>Ksh 4000</p>
+                <div class="buttons">
+                    <button>Add to Cart</button>
+                    <button>Order Now</button>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Peaky Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
